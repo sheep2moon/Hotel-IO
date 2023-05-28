@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Screen {
@@ -19,4 +18,40 @@ public class Screen {
 
     }
 
+    public void displayAvailableServices(int type){
+        switch(type){
+            case(1):{
+                System.out.println("1. Internet");
+            }break;
+            case(2):{
+                System.out.println("1. Internet");
+                System.out.println("2. VOD");
+            }break;
+            case(3):{
+                System.out.println("1. Internet");
+                System.out.println("2. VOD");
+                System.out.println("3. Konsola do gier");
+            }break;
+        }
+    }
+
+    public void displayPaymentForm(){
+
+    }
+
+    public void displaySummary(){
+
+    }
+
+    public void displayClientOptions(){
+
+    }
+
+    public void reportForm(){
+
+    }
+
+    public void addServicesForm(){
+
+    }
 }
