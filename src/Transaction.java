@@ -15,6 +15,9 @@ public class Transaction {
         nextId += 1;
     }
 
+    public int getRoomId() {
+        return this.roomId;
+    }
     public void setRoomId(int roomId){
         this.roomId = roomId;
     }

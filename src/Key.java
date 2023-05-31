@@ -19,4 +19,8 @@ public class Key {
     public int getId() {
         return id;
     }
+
+    public Client getClient() {
+        return currentClient;
+    }
 }

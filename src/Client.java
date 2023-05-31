@@ -1,17 +1,20 @@
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Client {
+    private static int nextId = 1;
     private int id;
     private int roomId;
-    private LocalDate from_date;
-    private LocalDate to_date;
+    public LocalDateTime from_date;
+    public LocalDateTime to_date;
     private Transaction transaction;
 
-    public Client(int id, int roomId, Transaction transaction, long days) {
-        this.id = id;
+    public Client( int roomId, Transaction transaction, long days) {
+        this.id = nextId;
         this.roomId = roomId;
         this.transaction = transaction;
-        this.from_date = LocalDate.now();
-        this.to_date = LocalDate.now().plusDays(days);
+        this.from_date = LocalDateTime.now();
+        this.to_date = LocalDateTime.now().plusDays(days);
+        nextId++;
     }
 }

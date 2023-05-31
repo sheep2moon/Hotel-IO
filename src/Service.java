@@ -10,6 +10,13 @@ public class Service {
         this.name = name;
         this.description = description;
         this.price = price;
-        this.next_id += 1;
+        next_id += 1;
+    }
+
+    public float getPrice(){
+        return  price;
+    }
+    public String getInfo() {
+        return "" + this.name + " - " + this.description + " cena: " + Float.toString(this.price) + " zł.";
     }
 }
